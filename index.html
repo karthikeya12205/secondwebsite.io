@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthikeya Kommana | Software Developer & AI/ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Canvas for starry background -->
+    <canvas id="starsCanvas"></canvas>
+
+    <!-- Center abstract background glow to simulate the 3D object presence -->
+    <div class="background-knot">
+        <!-- We can add a placeholder 3D image here if one exists, for now we use CSS radial glows -->
+        <div class="glow-1"></div>
+        <div class="glow-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <div class="logo-icon">KK</div>
+                <span class="logo-text">Karthikeya Kommana</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="active">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="https://ibb.co/6cqJZF2g" target="_blank" class="btn-download-cv">
+                <i data-lucide="download"></i> Download CV
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="about">
+            <h1 class="hero-title">Karthikeya Kommana</h1>
+            <h2 class="hero-subtitle">Software Developer & AI/ML Engineer</h2>
+            <p class="hero-description">
+                Passionate about building intelligent systems and solving real-world problems through<br>
+                innovative machine learning solutions and cutting-edge web technologies.
+            </p>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-info">
+                        <span class="stat-label">B.Tech CSE</span>
+                        <span class="stat-value">LPU Punjab | CGPA 6.0</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🚀</div>
+                    <div class="stat-info">
+                        <span class="stat-label">3+ Projects</span>
+                        <span class="stat-value">AI/ML & Web</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="https://ibb.co/6cqJZF2g" target="_blank" class="btn btn-secondary">Download Resume</a>
+            </div>
+
+            <div class="social-links-hero">
+                <a href="https://www.linkedin.com/in/kommana-karthikeya-24910628b/" target="_blank" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect width="4" height="12" x="2" y="9" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="https://github.com/karthikeya12205" target="_blank" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg>
+                </a>
+                <a href="mailto:karthikeyakommana1@gmail.com" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Core Specializations Section -->
+        <section class="section" id="specializations" style="padding-bottom: 40px;">
+            <div class="container">
+                <h2 class="section-title">Core Specializations</h2>
+                <div class="specializations-grid">
+                    <div class="spec-card glass-panel">
+                        <div class="spec-icon bot-icon">
+                            <i data-lucide="bot" style="width: 38px; height: 38px;"></i>
+                        </div>
+                        <h3>Machine Learning & AI</h3>
+                        <p>Deep learning, NLP, computer vision, and intelligent systems</p>
+                    </div>
+                    <div class="spec-card glass-panel">
+                        <div class="spec-icon globe-icon">
+                            <i data-lucide="globe" style="width: 38px; height: 38px;"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Full-stack development with modern frameworks and technologies</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="skills-grid-alt">
+
+                    <div class="skill-card-alt">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-wrap"><i data-lucide="code"></i></div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-pills">
+                            <div class="skill-pill"><i data-lucide="terminal"></i> Python</div>
+                            <div class="skill-pill"><i data-lucide="zap"></i> C++</div>
+                            <div class="skill-pill"><i data-lucide="database"></i> SQL</div>
+                            <div class="skill-pill"><i data-lucide="coffee"></i> Java</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card-alt">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-wrap"><i data-lucide="layers"></i></div>
+                            <h3>Technologies & Frameworks</h3>
+                        </div>
+                        <div class="skill-pills">
+                            <div class="skill-pill"><i data-lucide="cpu"></i> PyTorch</div>
+                            <div class="skill-pill"><i data-lucide="layout"></i> Django</div>
+                            <div class="skill-pill"><i data-lucide="server"></i> Flask</div>
+                            <div class="skill-pill"><i data-lucide="link"></i> LangChain</div>
+                            <div class="skill-pill"><i data-lucide="network"></i> Scikit-learn</div>
+                            <div class="skill-pill"><i data-lucide="terminal-square"></i> Linux</div>
+                            <div class="skill-pill"><i data-lucide="settings"></i> Jenkins</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card-alt">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-wrap"><i data-lucide="settings"></i></div>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="skill-pills">
+                            <div class="skill-pill"><i data-lucide="git-branch"></i> Git</div>
+                            <div class="skill-pill"><i data-lucide="github"></i> GitHub</div>
+                            <div class="skill-pill"><i data-lucide="code-2"></i> VS Code</div>
+                            <div class="skill-pill"><i data-lucide="database"></i> MySQL</div>
+                            <div class="skill-pill"><i data-lucide="bot"></i> Ollama</div>
+                            <div class="skill-pill"><i data-lucide="smile"></i> Hugging Face</div>
+                            <div class="skill-pill"><i data-lucide="cloud"></i> AWS</div>
+                            <div class="skill-pill"><i data-lucide="box"></i> Docker</div>
+                            <div class="skill-pill"><i data-lucide="book-open"></i> Jupyter</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card-alt">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-wrap"><i data-lucide="users"></i></div>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <div class="skill-pills">
+                            <div class="skill-pill"><i data-lucide="lightbulb"></i> Problem-Solving</div>
+                            <div class="skill-pill"><i data-lucide="users"></i> Team Collaboration</div>
+                            <div class="skill-pill"><i data-lucide="message-circle"></i> Communication</div>
+                            <div class="skill-pill"><i data-lucide="clock"></i> Time Management</div>
+                            <div class="skill-pill"><i data-lucide="star"></i> Leadership</div>
+                            <div class="skill-pill"><i data-lucide="refresh-cw"></i> Adaptability</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+
+                    <div class="project-item glass-panel">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/028/247/977/small/healthcare-background-accommodates-text-enhancing-medical-communication-visually-ai-generated-photo.jpg"
+                            alt="Hospital Management System"
+                            style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+                        <div class="project-info">
+                            <h3>AI-Powered Hospital Management System</h3>
+                            <p>A smart hospital management system enhanced with AI capabilities to streamline patient
+                                records, automate appointment scheduling, optimize doctor availability, and improve
+                                billing efficiency. The system integrates intelligent features such as chatbot
+                                assistance and predictive insights to enhance operational workflow and patient
+                                experience.</p>
+
+                            <div style="margin: 1rem 0;">
+                                <strong style="font-size: 0.9rem; color: #ffffff;">Technologies Used (AI-Centric
+                                    Development):</strong>
+                                <ul
+                                    style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; padding-left: 1.2rem; line-height: 1.6;">
+                                    <li><strong>AI Development Tools:</strong> ChatGPT / OpenAI (code generation & logic
+                                        design)</li>
+                                    <li><strong>Frameworks Generated via AI:</strong> React.js (frontend), Node.js
+                                        (backend)</li>
+                                    <li><strong>Database:</strong> SQL (schema designed with AI assistance)</li>
+                                    <li><strong>AI Integration:</strong> OpenAI API, LangChain (for chatbot &
+                                        automation)</li>
+                                    <li><strong>APIs:</strong> RESTful services (auto-generated & structured using AI)
+                                    </li>
+                                    <li><strong>Version Control:</strong> Git (AI-assisted workflows)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item glass-panel">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRir1STQFTZORbJiG_fAzOv0MwG3txOmzb1ZA&s"
+                            alt="AI Chatbot"
+                            style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+                        <div class="project-info">
+                            <h3>AI Chatbot</h3>
+                            <p>An intelligent conversational chatbot fully developed using AI-assisted tools, designed
+                                to handle real-time user queries with natural language understanding. The system
+                                provides accurate, context-aware responses and can be integrated into web applications
+                                for automated support and interaction.</p>
+
+                            <div style="margin: 1rem 0;">
+                                <strong style="font-size: 0.9rem; color: #ffffff;">Technologies Used (AI-Centric
+                                    Development):</strong>
+                                <ul
+                                    style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; padding-left: 1.2rem; line-height: 1.6;">
+                                    <li><strong>AI Development Tools:</strong> ChatGPT / OpenAI (code generation, logic
+                                        design, prompt engineering)</li>
+                                    <li><strong>Frameworks Generated via AI:</strong> Python / Node.js (backend),
+                                        optional React.js (frontend)</li>
+                                    <li><strong>AI Models & Integration:</strong> OpenAI API, LangChain (conversation
+                                        flow & memory handling)</li>
+                                    <li><strong>NLP Processing:</strong> Natural Language Processing (intent
+                                        recognition, response generation)</li>
+                                    <li><strong>APIs:</strong> RESTful APIs (AI-assisted development)</li>
+                                    <li><strong>Deployment & Tools:</strong> Git, cloud platforms (AI-guided setup)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <div class="container">
+                <div class="education-header">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">Academic journey and professional certifications that shaped my
+                        expertise</p>
+                </div>
+
+                <div class="education-grid">
+                    <!-- Academic Background Column -->
+                    <div class="education-column">
+                        <div class="column-header">
+                            <i data-lucide="graduation-cap"></i>
+                            <h3>Academic Background</h3>
+                        </div>
+
+                        <div class="edu-timeline">
+                            <!-- Item 1 -->
+                            <div class="edu-timeline-item">
+                                <div class="edu-timeline-icon">
+                                    <span style="font-size: 1.2rem;">🎓</span>
+                                </div>
+                                <div class="edu-card glass-panel">
+                                    <div class="edu-card-header">
+                                        <h4>Lovely Professional University</h4>
+                                        <span class="badge-status badge-current">Current</span>
+                                    </div>
+                                    <div class="edu-card-subtitle">
+                                        <p>Bachelor of Technology - Computer Science and Engineering</p>
+                                    </div>
+                                    <div class="edu-card-meta">
+                                        <span class="meta-item"><i data-lucide="map-pin"></i> Phagwara, Punjab</span>
+                                        <span class="meta-item"><i data-lucide="calendar"></i> Aug 2022 - Present</span>
+                                    </div>
+                                    <div class="edu-card-footer">
+                                        <span class="footer-label">CGPA:</span>
+                                        <span class="footer-value">6.0 / 10</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="edu-timeline-item">
+                                <div class="edu-timeline-icon">
+                                    <span style="font-size: 1.2rem;">📚</span>
+                                </div>
+                                <div class="edu-card glass-panel">
+                                    <div class="edu-card-header">
+                                        <h4>Sri Chaitanya Jr College</h4>
+                                        <span class="badge-status badge-completed">Completed</span>
+                                    </div>
+                                    <div class="edu-card-subtitle">
+                                        <p>Intermediate - MPC</p>
+                                    </div>
+                                    <div class="edu-card-meta">
+                                        <span class="meta-item"><i data-lucide="map-pin"></i> Hyderabad,
+                                            Telangana</span>
+                                        <span class="meta-item"><i data-lucide="calendar"></i> 2021 - 2023</span>
+                                    </div>
+                                    <div class="edu-card-footer">
+                                        <span class="footer-label">Percentage:</span>
+                                        <span class="footer-value">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="edu-timeline-item">
+                                <div class="edu-timeline-icon">
+                                    <span style="font-size: 1.2rem;">🏫</span>
+                                </div>
+                                <div class="edu-card glass-panel">
+                                    <div class="edu-card-header">
+                                        <h4>Sri Chaitanya School</h4>
+                                        <span class="badge-status badge-completed">Completed</span>
+                                    </div>
+                                    <div class="edu-card-subtitle">
+                                        <p>Secondary School Education (10th)</p>
+                                    </div>
+                                    <div class="edu-card-meta">
+                                        <span class="meta-item"><i data-lucide="map-pin"></i> Hyderabad,
+                                            Telangana</span>
+                                        <span class="meta-item"><i data-lucide="calendar"></i> 2020 - 2021</span>
+                                    </div>
+                                    <div class="edu-card-footer">
+                                        <span class="footer-label">Percentage:</span>
+                                        <span class="footer-value">100%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Certifications Column -->
+                    <div class="education-column">
+                        <div class="column-header">
+                            <i data-lucide="award"></i>
+                            <h3>Certifications</h3>
+                        </div>
+
+                        <div class="cert-list">
+                            <!-- Cert 1: Rising Tech Pro -->
+                            <a href="https://ibb.co/N6wHb1rP" target="_blank" class="cert-card glass-panel"
+                                style="display:block; text-decoration:none; color:inherit; cursor:pointer;">
+                                <img src="https://i.ibb.co/N6wHb1rP/Whats-App-Image-2026-03-23-at-10-52-43-PM.jpg"
+                                    alt="Rising Tech Pro Certificate"
+                                    style="width:100%; border-radius: 8px; margin-bottom: 0.8rem; object-fit: cover; max-height: 160px;">
+                                <div class="cert-header">
+                                    <h4>Rising Tech Pro</h4>
+                                    <span class="badge-status badge-neutral">Professional</span>
+                                </div>
+                                <p class="cert-provider">Rising Tech</p>
+                                <p class="cert-date">2024</p>
+                            </a>
+                            <!-- Cert 2 -->
+                            <a href="https://ibb.co/xKWBKF87" target="_blank" class="cert-card glass-panel"
+                                style="display:block; text-decoration:none; color:inherit; cursor:pointer;">
+                                <img src="https://i.ibb.co/xKWBKF87/image.jpg" alt="Python for Beginners Certificate"
+                                    style="width:100%; border-radius: 8px; margin-bottom: 0.8rem; object-fit: cover; max-height: 160px;">
+                                <div class="cert-header">
+                                    <h4>Python for Beginners</h4>
+                                    <span class="badge-status badge-neutral">Professional</span>
+                                </div>
+                                <p class="cert-provider">Simplilearn SkillUp</p>
+                                <p class="cert-date">2024</p>
+                            </a>
+                            <!-- Cert 3 -->
+                            <a href="https://ibb.co/LzkYJV3M" target="_blank" class="cert-card glass-panel"
+                                style="display:block; text-decoration:none; color:inherit; cursor:pointer;">
+                                <img src="https://i.ibb.co/LzkYJV3M/image.jpg" alt="DBMS Certificate"
+                                    style="width:100%; border-radius: 8px; margin-bottom: 0.8rem; object-fit: cover; max-height: 160px;">
+                                <div class="cert-header">
+                                    <h4>DBMS</h4>
+                                    <span class="badge-status badge-neutral">Technical</span>
+                                </div>
+                                <p class="cert-provider">Oracle University</p>
+                                <p class="cert-date">2024</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+
+                <div class="contact-header-top">
+                    <div class="contact-badge"><i data-lucide="message-square"></i> Let's Connect</div>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's discuss opportunities, collaborations, or just have a tech
+                        conversation!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left Column: Info -->
+                    <div class="contact-info-col">
+                        <h3 class="contact-col-title">Contact Information</h3>
+
+                        <div class="info-cards">
+                            <div class="info-card">
+                                <div class="info-icon"><i data-lucide="mail"></i></div>
+                                <div class="info-text">
+                                    <span class="info-label">Email</span>
+                                    <span class="info-value">karthikeyakommana1@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon"><i data-lucide="phone"></i></div>
+                                <div class="info-text">
+                                    <span class="info-label">Phone</span>
+                                    <span class="info-value">+91 9160221555</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                                <div class="info-text">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Hyderabad, Telangana 50001</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="contact-col-title mt-4">Connect With Me</h3>
+                        <div class="social-cards">
+                            <a href="https://github.com/karthikeya12205" target="_blank" class="social-card">
+                                <div class="info-icon"><i data-lucide="github"></i></div>
+                                <div class="info-text">
+                                    <span class="info-label">GitHub</span>
+                                    <span class="info-value small">github.com/karthikeya12205</span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kommana-karthikeya-24910628b/" target="_blank"
+                                class="social-card">
+                                <div class="info-icon"><i data-lucide="linkedin"></i></div>
+                                <div class="info-text">
+                                    <span class="info-label">LinkedIn</span>
+                                    <span class="info-value small">linkedin.com/in/kommana-karthikeya</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Form -->
+                    <div class="contact-form-col glass-panel">
+                        <h3 class="contact-col-title mb-4">Send a Message</h3>
+
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" placeholder="Your full name">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" placeholder="your.email@example.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="What's this about?">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea placeholder="Tell me about your project, opportunity, or just say hello!"
+                                    rows="4"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-submit">
+                                <i data-lucide="send"></i> Send Message
+                            </button>
+
+                            <p class="form-footer-text">
+                                Or reach out directly via <a href="mailto:karthikeyakommana1@gmail.com">email</a> for
+                                faster response
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Availability Banner -->
+                <div class="availability-banner">
+                    <div class="avail-header">
+                        <span class="avail-dot"></span>
+                        <h3>Currently Available</h3>
+                    </div>
+                    <p>Open to new opportunities in AI/ML engineering, full-stack development, and innovative tech
+                        projects. Let's build something amazing together!</p>
+                    <div class="avail-badges">
+                        <span>Full-time positions</span>
+                        <span>Internships</span>
+                        <span>Freelance projects</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/kommana-karthikeya-24910628b/" target="_blank"
+                        class="social-icon" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect width="4" height="12" x="2" y="9" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/karthikeya12205" target="_blank" class="social-icon"
+                        aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                            <path d="M9 18c-4.51 2-5-2-7-2" />
+                        </svg>
+                    </a>
+                    <a href="mailto:karthikeyakommana1@gmail.com" class="social-icon" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                    </a>
+                </div>
+                <p>&copy; 2026 Karthikeya Kommana. Built with passion.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
